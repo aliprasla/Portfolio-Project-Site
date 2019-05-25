@@ -1,5 +1,21 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-# Create your views here.
+
+dummy_data = [
+    {
+        'name':'MNIST',
+        'description':'MNIST application'
+    },
+    {
+        'name':"Classifier Viz",
+        'description':"Some cool classifier visualization"
+    }
+]
 def home(request):
-    return HttpResponse("<h1> Hello World</h1>")
+    context = {
+        'projects':dummy_data
+    }
+    return render(request,'projects/home.html',context)
+
+def about(request):
+    return render(request,'projects/about.html')
