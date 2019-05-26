@@ -1,20 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from . import models
 
-dummy_data = [
-    {
-        'name':'MNIST',
-        'description':'MNIST application'
-    },
-    {
-        'name':"Classifier Viz",
-        'description':"Some cool classifier visualization"
-    }
-]
 def home(request):
     context = {
-        'projects':dummy_data
+        'projects':models.Project.objects.all()
     }
+    
     return render(request,'projects/home.html',context)
 
 def about(request):
