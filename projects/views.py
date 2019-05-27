@@ -6,7 +6,6 @@ def home(request):
     context = {
         'projects':models.Project.objects.all()
     }
-    
     return render(request,'projects/home.html',context)
 
 def about(request):
