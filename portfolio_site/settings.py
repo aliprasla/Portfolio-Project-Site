@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'portfolio_site.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'projects-djongo-db',
+        'NAME': 'personal-portfolio-db',
     }
 }
 
