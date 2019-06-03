@@ -1,5 +1,5 @@
 {% extends "projects/base.html" %}
-
+<div class= "mx-auto">
 {% block body %}
     {% for project in projects %}
         <h1>{{project.name}}</h1>
@@ -8,3 +8,4 @@
     {% endfor %}
 
 {% endblock body %}
+</div>
