@@ -6,8 +6,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('',views.home,name='projects-home'),
-    path('about',views.about,name='projects-another')
+    path('',views.home,name='home'),
+    path('about', views.about, name='about')
 ]
 
 

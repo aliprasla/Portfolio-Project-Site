@@ -2,9 +2,11 @@
 <div class= "mx-auto">
 {% block body %}
     {% for project in projects %}
+        <div class="pt-2">
         <h1>{{project.name}}</h1>
         <p>{{project.description}}</p>
         <p>{{project.last_modified_on}}</p>
+    </div>
     {% endfor %}
 
 {% endblock body %}
