@@ -1,2 +1,2 @@
+django==2.2.10
 djongo==1.2.32
-django==2.2.1
